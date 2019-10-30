@@ -2,7 +2,6 @@ def join_string(list_string):
     string = '-'.join(list_string)
     return string
     
-
 key = input('enter key: ')
 length = len(key)
 print(length)
