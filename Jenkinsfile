@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Add any necessary build steps here (e.g., installing dependencies)
-                sh 'pip install -r requirements.txt'
+                sh '/Users/aniket/anaconda3/bin/pip install -r requirements.txt'
             }
         }
         
@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Add any necessary deployment steps here (e.g., starting the Flask app)
-                sh 'python app.py'
+                sh '/Users/aniket/anaconda3/bin/python app.py'
             }
         }
     }
