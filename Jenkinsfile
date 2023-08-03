@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Add any necessary deployment steps here (e.g., starting the Flask app)
-                sh '/Users/aniket/anaconda3/bin/python app.py'
+                sh '/Users/aniket/anaconda3/bin/python app.py &'
             }
         }
     }
