@@ -12,5 +12,4 @@ def hello_world():
 
 # Run the app if this script is executed directly
 if __name__ == '__main__':
-    #app.run(port=4999)
-    app.run(host="127.0.0.9", port=4999, debug=True)
+    app.run(port=4999, debug=True)
