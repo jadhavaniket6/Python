@@ -8,10 +8,6 @@ app = Flask(__name__)
 def hello_world():
     result = 'Hello, World! This is a basic Flask app.'
 
-    # Save the result to a file
-    with open('result.txt', 'w') as f:
-        f.write(result)
-
     return result
 
 # Run the app if this script is executed directly
