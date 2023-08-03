@@ -12,4 +12,4 @@ def hello_world():
 
 # Run the app if this script is executed directly
 if __name__ == '__main__':
-    app.run()
+    app.run(port=4999)
