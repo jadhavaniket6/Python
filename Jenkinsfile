@@ -6,10 +6,10 @@ pipeline {
             steps {
                 script {
                     sh 'curl -fsSL https://get.docker.com -o get-docker.sh'
-                    sh 'sudo sh get-docker.sh'
-                    sh 'sudo usermod -aG docker jenkins'
-                    sh 'sudo systemctl enable docker'
-                    sh 'sudo systemctl start docker'
+                    sh 'sh get-docker.sh'
+                    sh 'usermod -aG docker jenkins'
+                    sh 'systemctl enable docker'
+                    sh 'systemctl start docker'
                     // Build the Docker image
                     sh 'docker build -t my-flask-app .'
                 }
