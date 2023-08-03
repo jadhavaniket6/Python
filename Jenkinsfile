@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // This step will checkout the code from the Git repository
-                git 'https://github.com/your-username/your-flask-app.git'
+                git 'https://github.com/jadhavaniket6/Python.git'
             }
         }
         
